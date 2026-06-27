@@ -1,0 +1,27 @@
+name: Research task
+description: Investigate uncertainty before committing to a solution
+title: "[Research]: "
+labels: ["type:research", "status:ready"]
+body:
+  - type: textarea
+    id: question
+    attributes: {label: Decision question, description: What decision will this research inform?}
+    validations: {required: true}
+  - type: textarea
+    id: known
+    attributes: {label: Known facts and sources}
+  - type: textarea
+    id: unknown
+    attributes: {label: Unknowns and assumptions}
+    validations: {required: true}
+  - type: textarea
+    id: method
+    attributes: {label: Method and participants}
+    validations: {required: true}
+  - type: textarea
+    id: ethics
+    attributes: {label: Consent, privacy, safety, and confidentiality}
+  - type: textarea
+    id: exit
+    attributes: {label: Deliverable and exit criteria}
+    validations: {required: true}
