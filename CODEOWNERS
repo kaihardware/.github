@@ -1,0 +1,4 @@
+# Replace placeholders before enabling required code-owner review.
+* @kaihardware/owners
+/.github/ @kaihardware/owners
+/profile/ @kaihardware/brand
