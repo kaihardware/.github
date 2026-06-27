@@ -1,0 +1,31 @@
+name: Bug report
+description: Report reproducible unexpected behavior
+title: "[Bug]: "
+labels: ["type:bug", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not report security vulnerabilities here."
+  - type: textarea
+    id: observed
+    attributes: {label: Observed behavior, description: What happened?}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected behavior}
+    validations: {required: true}
+  - type: textarea
+    id: reproduce
+    attributes: {label: Reproduction steps}
+    validations: {required: true}
+  - type: input
+    id: version
+    attributes: {label: Product and version}
+    validations: {required: true}
+  - type: textarea
+    id: context
+    attributes: {label: Environment and evidence, description: Include hardware revision, firmware, OS, logs, photos, and frequency where relevant.}
+  - type: textarea
+    id: impact
+    attributes: {label: User impact and safety considerations}
+    validations: {required: true}
