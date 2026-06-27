@@ -1,0 +1,31 @@
+name: Design discussion
+description: Review a consequential product or architecture tradeoff
+title: "[Design]: "
+labels: ["type:design", "status:discussion"]
+body:
+  - type: textarea
+    id: context
+    attributes: {label: Context and decision needed}
+    validations: {required: true}
+  - type: textarea
+    id: requirements
+    attributes: {label: Requirements and constraints}
+    validations: {required: true}
+  - type: textarea
+    id: options
+    attributes: {label: Options and tradeoffs}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Evidence, prototypes, and risks}
+  - type: input
+    id: deadline
+    attributes: {label: Decision owner and decision-by date}
+    validations: {required: true}
+  - type: checkboxes
+    id: record
+    attributes:
+      label: Durable decision
+      options:
+        - label: I will create or update an ADR if this changes architecture or product policy.
+          required: true
